@@ -14,9 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Owen's Markup Language
-email: owez@scalist.net
-description: >- # this means to ignore newlines until "baseurl:"
-  A lightweight markup language.
+description: A lightweight markup language.
+logo: logo-main.png
 baseurl: "/owml-website" # the subpath of your site, e.g. /blog
 url: "https://scowez.gitlab.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: og_3103
@@ -25,7 +24,7 @@ gitlab_username: scOwez
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-basically-basic
 plugins:
   - jekyll-feed
 
