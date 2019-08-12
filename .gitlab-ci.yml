@@ -6,6 +6,7 @@ variables:
 
 before_script:
   - bundle install
+  - bundle update --bundler
 
 test:
   stage: test
