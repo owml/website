@@ -5,8 +5,8 @@ variables:
   LC_ALL: C.UTF-8
 
 before_script:
-  - bundle install
   - bundle update --bundler
+  - bundle install
 
 test:
   stage: test
