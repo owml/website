@@ -36,3 +36,4 @@ google_fonts:
 navigation_pages:
   - parser.md
   - branding.md
+  - lang-spec.md
