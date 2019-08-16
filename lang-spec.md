@@ -20,26 +20,11 @@ Welcome to the language specification for Owen's Markup Language! This document 
 
 ### General Syntax
 
-*Apologies about the incomplete style of the following info, there isn't a much more human-readable way of convaying this infomation.*
-
-`[x]` means that there is a smaller definition for `x` and it will be in the bullet-points further along. `[x="y"]` Means that "x" should be reffered to as "y" in this circumstance. `[x|y|z]` means that it will pick the first method it finds to be correct. `[..]` means that this info will be extracted.
-
-- Keypair: `[key_name="name"]: [key="data"];`
-  - Key Name: `[key_string|key_int]`
-    - Key: `[key_string|key_int|key_array|key_object]`
-      - Key String: `"[..]"`
-      - Key Int: `[..]`
-- Array: `\[[key_array="item"]\]`
-  - Key array: `[key];`
-    - Key: `[key_string|key_int]`
-      - Key String: `"[..]"`
-      - Key Int: `[..]`
-- Object: `{[keypair]}`
-  - Keypair: `[key_name="name"]: [key="data"];`
-    - Key Name: `[key_string|key_int]`
-      - Key: `[key_string|key_int|key_array|key_object]`
-        - Key String: `"[..]"`
-        - Key Int: `[..]`
+- object: `"{" ( keypair";" )* "}"`
+- array: `"[" ( key";" )* "]"`
+- keypair: `key_name":" key`
+- key: `( key_int | key_string | array | object )`
+- key_name: `( key_int | key_string )`
 
 Here is a more padded-out example of this in action:
 
