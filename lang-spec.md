@@ -83,7 +83,7 @@ Here is a more padded-out example of this in action:
 ```c
 "The following data contains an int": 656435;
 923857: "Names can be ints";
-"Negative int coming up!": 158403;
+"Negative int coming up!": -158403;
 ```
 
 **Array**:
