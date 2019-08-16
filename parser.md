@@ -17,13 +17,17 @@ In this document, we will briefly go over how to build from source and setup thi
 
 This respository (<https://gitlab.com/scOwez/owml-parser>) could be considered the main "hub" of Owen's Markup Language, containing documentation for Owen's Markup Language itself alongside the core, standardized parser for owml itself.
 
-If you would like to use this parser and you are not using Rust, there is a handy [Ecosystem section](../../README.md#ecosystem-earth_africa) in the README, containing links to various bindings and implamentations of owml.
-
 ## Installing
 
 In this section, we will be going over how to install this parser.
 
-### Downloading `owml-parser`
+### Downloading stable `owml-parser` **(Reccomended)**
+
+The stable, field-tested builds of owml-parser come out on it's **[Crates.io page](https://crates.io/crates/owml-parser)**.
+
+Simply add the most recent version, displayed prominently on the site into your `Cargo.toml` file and you should be all set!
+
+### Downloading cutting-edge `owml-parser`
 
 The most recently passing [job artifacts](https://docs.gitlab.com/ee/user/project/pipelines/job_artifacts.html) (the system owml uses to automatically generate binaries on a sucsessful [CI run](https://docs.gitlab.com/ee/ci/)).
 
